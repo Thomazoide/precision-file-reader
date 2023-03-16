@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COO</title>
+		<script src="http://apis.google.com/js/api.js" async defer></script>
+		<script src='https://accounts.google.com/gsi/client' async defer></script>
+  </head>
+  <body>
+    <script src="http://apis.google.com/js/api.js" async defer></script>
+		<script src='https://accounts.google.com/gsi/client' async defer></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+		<script type='module'>
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyD8Ilb642y4NHmsS_eZzRJrqyf2ByohglM",
+        authDomain: "coo-db-1e7c2.firebaseapp.com",
+        projectId: "coo-db-1e7c2",
+        storageBucket: "coo-db-1e7c2.appspot.com",
+        messagingSenderId: "815839575859",
+        appId: "1:815839575859:web:8b73eef7af30f6574d8846",
+        measurementId: "G-HVXRB6MXPP",
+        databaseURL: "https://coo-db-1e7c2-default-rtdb.firebaseio.com/"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app)
+    </script>
+  </body>
+</html>
