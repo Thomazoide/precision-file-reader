@@ -1,13 +1,426 @@
+.mb-3{
+  background-color: #050d14;
+  font-family: IBM-plex;
+}
+
+.boton-modal{
+	margin: 20px;
+}
+
+body{
+  margin:0;
+  padding:0;
+  border:0;
+  align-items: center;
+  justify-content: center;
+}
+
+.incrustado{
+  min-height: 100vh;
+  width:100%;
+}
+
+.boton-borrar{
+	float: left;
+}
+
+.c-img{
+  max-height:145px;
+}
+
+bloqueTabla{
+  max-height: 70vh;
+	overflow-y: scroll;
+	
+}
+
+.popup{
+	padding: 15px;
+}
+
+.boton-sabana{
+	float: right;
+}
+
+.tabla{
+	margin: 5vh;
+	
+	border-radius: 10px;
+	background-color: #050d14;
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+
+.dataFile{
+	border: solid;
+	border-color: gray;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #050d14;
+}
+
+.carta{
+  
+  max-width: 80vh;
+  
+  
+}
+
+.userData{
+  float: left;
+}
+
+.celda{
+  font-family:IBM-plex;
+  color:white;
+  background-color: #4425b3;
+}
+
+.tablaInfo{
+  font-family:IBM-plex;
+  height: 100vh;
+  width: 100%;
+}
+
+.cabezalCol{
+  background-color: #168873;
+  font-family: IBM-plex;
+  font-weight: bold;
+}
+
+.cab-def{
+  min-height: 65px;
+  max-height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items:center;
+}
+
 .cuerpo{
-    background-image: url('./assets/bgP_az.png');
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: IBM-plex;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-height:100vh;
+  background-color: #34383A;
+  background-image: url("./assets/bgP_az.png");
+  background-size: cover;
+}
+
+#btn-submit{
+  margin-left: 3vh;
+  margin-right: 3vh;
+  margin-bottom: 3vh;
+  max-width:94%;
+}
+
+.info{
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque-login{
+  display:flex;
+  flex-direction: column;
+  min-width:30vh;
+  
+  border-radius: 8px;
+  border-width: 5px;
+  
+  align-items:center;
+  align-content:center;
+  justify-content: center;
+  text-align: center;
+}
+
+.adj{
+  min-height: 100vh;
+}
+
+.cabecera{
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 @font-face{
-    font-family: IBM-plex;
-    src: url('./assets/IBMPlexSans.ttf');
+  font-family:IBM-plex;
+  src: url("./assets/IBMPlexSans.ttf");
 }
+
+.bloque-info{
+	min-height: 10vh;
+  padding: 0;
+  font-family:IBM-plex;
+  align-items:center;
+  justify-content: center;
+  align-content: center;
+  text-align:center;
+}
+
+.info-ent{
+  margin: 10vh 10vh 10vh 10vh;
+  min-height: 300px;
+  justify-content: center;  
+}
+
+.userInfo{
+  font-family: IBM-plex;
+  font-size: 26px;
+}
+
+.pfpicture{
+  max-height: 80px;
+  border-radius: 50%;
+}
+
+.logoutBtn{
+  float: right;
+  margin-top: 3vh;
+}
+
+.texto-titulo{
+  font-weight: bold;
+  color: black;
+}
+
+.multimedia{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.adj{
+  font-family: IBM-plex;
+}
+
+.img-g{
+  max-height:32px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.carrusel{
+  margin-left:10%;
+  max-height: 504px;
+  max-width: 896px;
+}
+
+.contenidoFA{
+  font-family: IBM-plex;
+}
+
+.logo_iso{
+  max-height: 300px;
+}
+
+.btn-fa{
+  display:flex;
+  flex-direction: column;
+}
+
+.media-display{
+  display: flex;
+  min-height: 72px;
+  min-width: 128px;
+  max-height: 576px;
+  max-width: 1024px;
+  justify-content:center;
+  align-items: center;
+}
+
+.bloque-paises{
+  margin: 10vh;
+}
+
+.logotipo{
+  height: 30px;
+}
+
+.btn-gdrive{
+  width:100%;
+  max-height: 38px;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.lect-arch{
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.logotipo-b{
+  min-height: 30px;
+  max-height: 50px;
+  border-radius: 5px;
+}
+
+.contenido{
+  font-family:IBM-plex;
+  margin:0px;
+  border:0px;
+  padding:0px;
+}
+
+.funcionalidad{
+  min-height: 50vh;
+
+  margin-top: 5vh;
+}
+
+.texto-titulo-2{
+  font-weight: normal;
+  text-shadow: 1px 1px 2px black;
+  color: #0A1A28;
+}
+
+.tarjeta{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  text-align: center;
+  
+  margin: 6vh;
+}
+
+.bandera{
+  max-height: 100px;
+  width: 147px;
+  height:98px;
+}
+
+.arch-display{
+  min-height: 100vh;
+}
+
+.mid{
+  margin: 6vh;
+}
+
+.texto-titulo-3{
+  font-weight: normal;
+  text-shadow: 1px 1px 2px black;
+  color: whitesmoke;
+}
+
+.contenido-int{
+  font-family:IBM-plex;
+  max-width: 98%;
+  background-color: gray;
+}
+
+.logo-def{
+  max-height: 130px;
+}
+
+.parrafo{
+  justify-content: center;
+}
+
+.formulario-interior{
+  
+  background-color: #050d14;
+  border-radius: 15px;
+}
+
+.col-form{
+  margin-bottom: 8vh;
+}
+
+.col-form-marg{
+  margin-right:8vh;
+}
+
+.video{
+  display: flex;
+  min-width: 256px;
+  min-height: 144px;
+  max-height: 504px ;
+  max-width: 896px;
+}
+.esp{
+  margin:3vh;
+  justify-content:center;
+}
+
+.sec{
+  background-color: #050d14 ;
+}
+
+#signInDiv{
+  font-family:IBM-plex;
+  text-align: center;
+  align-self: center;
+}
+
+
+.tabla::-webkit-scrollbar-thumb{
+  width: 14px;
+  
+  border-color: black;
+  background: #2b3446;
+  border-radius:10px;
+}
+
+
+
+.container-bloque{
+  transform: rotateX(180deg);
+  display: flex;
+  overflow-x: scroll;
+}
+
+.container-bloque::-webkit-scrollbar{
+  height:7px;
+  width: 15px;
+  border: 2px solid #16887355;
+  border-radius: 10px;
+  background: #4425b3
+}
+
+.tabla::-webkit-scrollbar{
+	height: 7px;
+	width: 15px;
+	border: 2px solid #050d14;
+	border-radius: 10px;
+	background: #050d14;
+}
+
+.bloque-btns{
+  
+  transform: rotateX(180deg);
+  height: 33vh;
+}
+
+.dropdown-menu{
+  max-height: 27vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.boton-arch{
+  display:flex;
+  max-width:100%;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.boton-arch:hover{
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.bloque-2{
+  
+}
+
