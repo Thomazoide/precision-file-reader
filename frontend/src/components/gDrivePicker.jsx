@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { Container, Button } from "react-bootstrap"
-import useDrivePicker from 'react-google-drive-picker'
+import useDrivePicker from 'react-google-drive-picker/dist'
 
-export default function GoogleDrivePicker({logStatus}){
-    const [accessToken, setAccessToken] = useState('')
+export default function GoogleDrivePicker({token}){
+    const [accessToken, setAccessToken] = useState(token)
     const [isLogged, setIsLogged] = useState(false)
     const [file, setFile] = useState()
     const [openPicker, authResponse] = useDrivePicker()
@@ -12,18 +12,19 @@ export default function GoogleDrivePicker({logStatus}){
         let verifyToken = localStorage.getItem('access_token')
         if(verifyToken != ''){
             setAccessToken(verifyToken)
+            console.log(accessToken)
             setIsLogged(true)
         }
-    } )
+    }, [] )
 
     const handleOpenPicker = () => {
         openPicker( {
-            clientId: '',
-            developerKey: '',
+            clientId: '644315389916-p2prgiic40hvpb51l6ilhhojog62frlv.apps.googleusercontent.com',
+            developerKey: 'AIzaSyAnR02rEMk7wKmvPv6SXLwQYzPSk3L6zs8',
             viewId: 'SPREADSHEETS',
             token: accessToken,
-            showUploadView: true,
-            showUploadFolders: true,
+            showUploadView: false,
+            showUploadFolders: false,
             supportDrives: true,
             multiselect: false,
             callbackFunction: (data) => {
@@ -37,9 +38,10 @@ export default function GoogleDrivePicker({logStatus}){
 
         return(
             <>
-                {isLogged ? <Container className='bloque-boton'>
-                    <Button variant="info" onClick={()=>handleOpenPicker()} >Seleccionar desde Drive</Button>
-                </Container> : null}
+                <Container className='bloque-boton'>
+                    <p>opcion 1</p>
+                    <button onClick={()=>handleOpenPicker()}></button>
+                </Container> 
 
             </>
         )

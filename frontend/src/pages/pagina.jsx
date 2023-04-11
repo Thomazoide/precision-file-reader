@@ -10,7 +10,6 @@ export default function Pagina(){
             <div className="cuerpo">
                 <Container className="contenido">
                     <GoogleLogin/>
-                    <GoogleDrivePicker/>
                 </Container>
             </div>
         </>
