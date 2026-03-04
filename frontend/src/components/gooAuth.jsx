@@ -15,7 +15,7 @@ export default function GoogleLogin(){
 
     const oAuthToken = (googleId) => {
         const client = google.accounts.oauth2.initTokenClient({
-            client_id: '644315389916-p2prgiic40hvpb51l6ilhhojog62frlv.apps.googleusercontent.com',
+            client_id: 'ID',
             scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.metadata https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.appdata',
             hint: googleId,
             prompt: '',
@@ -41,7 +41,7 @@ export default function GoogleLogin(){
 
     useEffect( () => {
         google.accounts.id.initialize({
-            client_id: '644315389916-p2prgiic40hvpb51l6ilhhojog62frlv.apps.googleusercontent.com',
+            client_id: 'ID',
             callback: handleCallbackResponse
         })
 
@@ -70,8 +70,8 @@ export default function GoogleLogin(){
 
     const handleOpenPicker = () => {
         openPicker( {
-            clientId: '644315389916-p2prgiic40hvpb51l6ilhhojog62frlv.apps.googleusercontent.com',
-            developerKey: 'AIzaSyAnR02rEMk7wKmvPv6SXLwQYzPSk3L6zs8',
+            clientId: 'ID',
+            developerKey: 'devKey',
             viewId: 'SPREADSHEETS',
             token: tokens,
             showUploadView: false,
