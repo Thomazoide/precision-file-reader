@@ -19,8 +19,8 @@ export default function GoogleDrivePicker({token}){
 
     const handleOpenPicker = () => {
         openPicker( {
-            clientId: '644315389916-p2prgiic40hvpb51l6ilhhojog62frlv.apps.googleusercontent.com',
-            developerKey: 'AIzaSyAnR02rEMk7wKmvPv6SXLwQYzPSk3L6zs8',
+            clientId: 'ID',
+            developerKey: 'devKey',
             viewId: 'SPREADSHEETS',
             token: accessToken,
             showUploadView: false,
